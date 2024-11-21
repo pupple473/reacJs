@@ -24,24 +24,8 @@ function App() {
   return (
     <ChakraProvider>
       <NavBar />
-      {loading ? (
-        <Flex alignItems={"center"} justify={"center"} height={"90vh"}>
-          <Spinner />
-        </Flex>
-      ) : (
-        // <ItemListContainer greeting="Bienvenidos a mi proyecto react" />
-        <Flex
-          alignItems={"center"}
-          justify={"center"}
-          height={"90vh"}
-          fontSize={"2rem"}
-        >
-          <Button onClick={handleRemove}>-</Button>
-          {count}
-          <Button onClick={handleAdd}>+</Button>
-        </Flex>
-      )}
-    </ChakraProvider>
+
+      <ItemListContainer greeting="Bienvenidos a mi primera entrega de react" />   </ChakraProvider>
   );
 }
 
